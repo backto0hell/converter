@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         '/weight': (context) => WeightPage(),
         '/currency': (context) => CurrencyPage(),
         '/temperature': (context) => TemperaturePage(),
-        '/st_unit': (context) => stUnitPage(),
+        '/st_unit': (context) => StUnitPage(),
         '/length': (context) => LengthPage(),
       },
     );
