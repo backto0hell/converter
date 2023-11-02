@@ -1,11 +1,13 @@
+import 'package:converter/app/feature/converter/currency_page.dart';
+import 'package:converter/app/feature/converter/length_page.dart';
+import 'package:converter/app/feature/converter/st_unit_page.dart';
+import 'package:converter/app/feature/converter/temperature_page.dart';
+import 'package:converter/app/feature/converter/weight_page.dart';
+import 'package:converter/app/feature/home/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/app/feature/converter_currency.dart';
-import 'package:flutter_application_2/app/feature/converter_weight.dart';
-
-import 'feature/converter_home_page.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({
+  MyApp({
     super.key,
   });
 
@@ -19,8 +21,11 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => Converter(),
-        '/weight': (context) => Weight(),
-        '/currency': (context) => Currency(),
+        '/weight': (context) => WeightPage(),
+        '/currency': (context) => CurrencyPage(),
+        '/temperature': (context) => TemperaturePage(),
+        '/st_unit': (context) => stUnitPage(),
+        '/length': (context) => LengthPage(),
       },
     );
   }
